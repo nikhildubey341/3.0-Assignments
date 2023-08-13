@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        body {
+            background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+
+            width: 100%;
+
+        }
+
+        .header img {
+            width: 200px;
+        }
+
+        .page {
+            color: white;
+            width: 440px;
+            height: 640px;
+            background-color: rgba(0, 0, 0, 0.911);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .inside {
+
+            width: 70%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        ::placeholder {
+            color: white;
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .inputs input {
+            background-color: #333333;
+            border: none;
+            margin-top: 10px;
+            color: white;
+            padding: 5px;
+            height: 35px;
+        }
+
+        .button button {
+            width: 100%;
+            height: 45px;
+            background-color: #E50914;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+
+
+        }
+
+        .checkboxBlock {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+
+        }
+
+        .footer {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            background-color: rgba(0, 0, 0, 0.911);
+            color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            
+        }
+
+        .footer a {
+            color: #737373;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+
+
+        .block2 {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+
+        }
+
+        .block3 {
+            display: flex;
+            justify-content: flex-start;
+
+            width: 100%;
+        }
+
+        .block4 {
+
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+        }
+
+        .block4 select {
+            background-color: #333333;
+        }
+
+        .new {
+            color: #737373;
+        }
+
+        .signup:hover {
+            text-decoration: underline;
+            cursor: pointer;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="header">
+            <img src="Files/Netflix.png" alt="">
+
+        </div>
+
+
+        <div class="page">
+
+            <div class="inside">
+                <div class="title">
+                    <h1>Sign-In</h1>
+
+                </div>
+
+                <div class="inputs">
+                    <input type="text" placeholder="Email or phone number">
+                    <input type="password" placeholder="password">
+
+                </div>
+
+                <div class="button">
+                    <button>Sign In</button>
+                    <div class="checkboxBlock">
+                        <div>
+                            <input type="checkbox">
+                            <span>Remember Me</span>
+                        </div>
+
+                        <div>
+                            <span>Need help?</span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="moreinfo">
+                    <div>
+                        <span class="new">New to Netflix?</span>
+                        <span class="signup">Sign up now.</span>
+                    </div>
+                    <br>
+                    <div>
+                        <span style="color: #737373;">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="">Learn more.</a> </span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <footer class="footer">
+
+
+        <div class="block1">
+            <span style="padding: 130px;">Questions? Call 000-800-919-1694</span>
+
+
+        </div>
+
+        <div class="block2">
+            <a style="margin-left: 130px;" href="">FAQ</a>
+            <a href="">Help Centre</a>
+            <a href="">Terms of Use</a>
+            <a href="">Privacy</a>
+
+        </div>
+
+        <div class="block3">
+            <a style="margin-left: 130px;" href="">Cookie Preferences</a>
+            <a style="margin-left: 180px;" href="">Corporate Information</a>
+
+        </div>
+
+        <div class="block4">
+            <select style="margin-left: 130px;">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+
+
+
+            </select>
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
