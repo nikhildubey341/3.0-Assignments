@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog-Clock</title>
+    <style>
+        .container {
+            position: relative;
+            margin: auto;
+            height: 40vw;
+            /*to make the height and width responsive*/
+            width: 40vw;
+            background: url(https://clipart-library.com/images/pc58gpA9i.gif) no-repeat;
+            /*setting our background image*/
+            background-size: 100%;
+        }
+
+        .clock {
+            position: absolute;
+            background: black;
+            border-radius: 10px;
+            transform-origin: bottom;
+        }
+
+        #hour {
+            width: 1.8%;
+            height: 25%;
+            top: 25%;
+            left: 48.85%;
+
+        }
+
+        #minute {
+            width: 1.6%;
+            height: 30%;
+            top: 19%;
+            left: 48.9%;
+
+        }
+
+        #second {
+            width: 1%;
+            height: 40%;
+            top: 9%;
+            left: 49.25%;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="clock" id="hour"></div>
+        <div class="clock" id="minute"></div>
+        <div class="clock" id="second"></div>
+    </div>
+
+    <script>
+        function UpdateClock() {
+            d = new Date(); //object of date()
+            hr = d.getHours();
+            min = d.getMinutes();
+            sec = d.getSeconds();
+            hr_rotation = 30 * hr + min / 2; //converting current time
+            min_rotation = 6 * min;
+            sec_rotation = 6 * sec;
+
+
+            document.getElementById("hour").style.transform = `rotate(${hr_rotation}deg)`;
+            document.getElementById("minute").style.transform = `rotate(${min_rotation}deg)`;
+            document.getElementById("second").style.transform = `rotate(${sec_rotation}deg)`;
+
+
+
+        }
+        setInterval(UpdateClock, 1000)
+
+    </script>
+
+
+</body>
+
+</html>
